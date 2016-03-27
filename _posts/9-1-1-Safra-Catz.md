@@ -1,7 +1,7 @@
 ---
 layout: template
 title: Safra Ada Catz
-image: Safra_Catz.jpg
+image: Safra_Catz2.jpg
 link: https://en.wikipedia.org/wiki/Safra_A._Catz
 ---
 
