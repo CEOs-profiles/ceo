@@ -4,20 +4,44 @@ layout: default
 
 <!-- Header -->
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <img class="img-responsive" src="{{site.baseurl}}/img/profile.png" alt="{{ page.ceo }} [CEO]">
-                <div class="intro-text">
-                    <span class="name">CEO: {{ page.ceo }}</span>
-                    <hr class="star-light">
-                    <span class="skills">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <a href="{{site.baseurl}}/{{page.url}}"><img class="img-responsive" src="{{site.baseurl}}/images/{{page.image}}" alt="{{ page.title }} [CEO]"></a>
+        <div class="intro-text">
+          <span class="name">CEO: {{ page.title }}</span>
+          <hr class="star-light">
+          <span class="skills">
 
-                      <p>{{ content }}</p>
+            <p>{{ content }}</p>
+            <p>Read <a class="alter" href="{{page.link}}"> more </a>.</p>
 
-                    </span>
-                </div>
-            </div>
+          </span>
         </div>
+      </div>
     </div>
+    <div class="row">
+      {% if page.previous %}
+      {% assign previous = page.previous %}
+      {% else %}
+      {% assign previous = site.posts[0] %}
+      {% endif %}
+      {% if previous %}
+      <span>
+        <a class="previous-link" rel="prev" href="{{site.baseurl}}{{ previous.url }}"></a>
+      </span>
+      {% endif %}
+      {% if page.next %}
+        {% assign next = page.next %}
+    {% else %}
+        {% assign last lastPostIndex = site.posts | size | minus: 1 %}
+        {% assign next = site.posts[lastPostIndex] %}
+    {% endif %}
+      {% if next %}
+      <span>
+        <a rel="next" class="next-link" href="{{site.baseurl}}{{ next.url }}"></a>
+      </span>
+      {% endif %}
+    </div>
+  </div>
 </header>
