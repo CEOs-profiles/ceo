@@ -24,7 +24,7 @@ layout: default
       {% if page.previous %}
         {% assign previous = page.previous %}
       {% else %}
-        no previous {% assign previous = site.posts[0] %}
+        {% assign previous = site.posts[0] %}
       {% endif %}
       {% if previous %}
       <span>
@@ -34,7 +34,6 @@ layout: default
       {% if page.next %}
         {% assign next = page.next %}
     {% else %}
-        no next-link
         {% assign last lastPostIndex = site.posts | size | minus: 1 %}
         {% assign next = site.posts[lastPostIndex] %}
     {% endif %}
