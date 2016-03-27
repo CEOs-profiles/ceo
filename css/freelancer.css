@@ -378,6 +378,30 @@ footer .footer-below {
     outline: 0;
 }
 
+
+.cycle-link-wrap {
+
+}
+.next-link {
+    background: url("/ceo/images/left-arrow.png") no-repeat 0px center rgba(34, 34, 34, 0);
+    color: #2c3e50;
+    z-index: 1049;
+    position: fixed;
+    left: 0%;
+    bottom: 50%;
+    width: 50px;
+    height: 50px;
+}
+.previous-link {
+    background: url("/ceo/images/right-arrow.png") no-repeat 18px center rgba(34, 34, 34, 0);
+    z-index: 1049;
+    position: fixed;
+    right: 0%;
+    bottom: 50%;
+    width: 50px;
+    height: 50px;
+}
+
 .scroll-top {
     z-index: 1049;
     position: fixed;
