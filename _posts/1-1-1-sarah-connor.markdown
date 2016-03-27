@@ -1,6 +1,6 @@
 ---
-layout: post
-ceo: Sarah Connor
+layout: template
+title: Sarah Connor
 image: profile.png
 ---
 
