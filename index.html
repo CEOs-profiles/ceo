@@ -1,35 +1,33 @@
 ---
 layout: default
-title: Home
+title: CEOs
 ---
 
-
-
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-							<!-- Show all -->
-							{% for post in site.posts %}
-								<article>
-											<img class="img-responsive" src="{{site.baseurl}}/img/{{post.image}}" alt="{{ page.ceo }} [CEO]">
-													<h2><a href="{{site.baseurl}}{{post.url}}">{{ post.ceo }}</a></h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Show all -->
+        {% for post in site.posts %}
+        <article>
+          <img class="img-responsive" src="{{site.baseurl}}/images/{{post.image}}" alt="{{ page.ceo }} [CEO]">
+          <h2><a href="{{site.baseurl}}{{post.url}}">{{ post.ceo }}</a></h2>
 
-													<div class="intro-text">
-					                    <span class="name">CEO: {{ page.ceo }}</span>
-					                    <hr class="star-light">
-					                    <span class="skills">
+          <div class="intro-text">
+            <span class="name">CEO: {{ page.ceo }}</span>
+            <hr class="star-light">
+            <span class="skills">
 
-					                      <p>{{ content }}</p>
+              <p>{{ content }}</p>
 
-					                    </span>
-					                </div>
+            </span>
+          </div>
 
-								</article>
-							{% endfor %}
+        </article>
+        {% endfor %}
 
 
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </header>
