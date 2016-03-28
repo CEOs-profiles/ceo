@@ -6,19 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property=”og:description” content=”{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}”/>
+  <meta property=”og:description” content=”{% if page.title %}{{ page.title }} |{% endif %}{{ site.name }}”/>
 <meta property=”og:url” content=”{{site.url}}/{{page.url}}”/>
-<meta property=”og:image” content=”{{site.url}}{{site.baseurl}}/images/{% if page.image %}{{page.image}}
-{% else %}profile.png
-{% endif %}”
+<meta property=”og:image” content=”{{site.url}}{{site.baseurl}}/images/{% if page.image %}{{page.image}}{% else %}profile.png{% endif %}”/>
 <meta property=”og:type” content=”article”/>
 <meta property=”og:site_name” content=”CEOs”/>
 
 <meta name=”twitter:card” content=”{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}”>
 <meta name=”twitter:description” content=”{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}”>
-<meta name=”twitter:image:src” content=”{{site.url}}{{site.baseurl}}/images/{% if page.image %}{{page.image}}
-{% else %}profile.png
-{% endif %}”>
+<meta name=”twitter:image:src” content=”{{site.url}}{{site.baseurl}}/images/{% if page.image %}{{page.image}}{% else %}profile.png{% endif %}”>
 
 
 
@@ -110,7 +106,7 @@
         <div class="col-lg-8 col-lg-offset-2">
           <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fceos-profiles.github.io%2Fceo&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="{{site.baseurl}}/images/flat_web_icon_set/color/Facebook.png"></a></li>
-            <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fceos-profiles.github.io%2Fceo&text=:%20http%3A%2F%2Fceos-profiles.github.io%2Fceo" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="{{site.baseurl}}/images/flat_web_icon_set/color/Twitter.png"></a></li>
+            <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fceos-profiles.github.io%2Fceo&text=:%20http%3A%2F%2Fceos-profiles.github.io%2Fceo" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('This is how I picture a #CEO') + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="{{site.baseurl}}/images/flat_web_icon_set/color/Twitter.png"></a></li>
             <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fceos-profiles.github.io%2Fceo&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="{{site.baseurl}}/images/flat_web_icon_set/color/Reddit.png"></a></li>
             <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fceos-profiles.github.io%2Fceo&title=&summary=&source=http%3A%2F%2Fceos-profiles.github.io%2Fceo" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="{{site.baseurl}}/images/flat_web_icon_set/color/LinkedIn.png"></a></li>
             <li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fceos-profiles.github.io%2Fceo" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="{{site.baseurl}}/images/flat_web_icon_set/color/Email.png"></a></li>
