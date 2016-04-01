@@ -1,6 +1,6 @@
 ---
 layout: template
-title: Mariéme Jamme
+title: Marieme Jamme
 image: Marieme-Jamme.jpeg
 link: https://en.wikipedia.org/wiki/Mari%C3%A9me_Jamme
 ---
