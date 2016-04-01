@@ -7,11 +7,11 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <img class="img-responsive" src="{{site.baseurl}}/images/{{page.image}}" alt="{{ page.title }} [CEO]">
+        <img class="img-responsive max-50" src="{{site.baseurl}}/images/{% if page.image %}{{page.image}}{% else %}profile.png{% endif %}" alt="{{ page.title }} [CEO]">
         <div class="intro-text">
           <span class="name">CEO: {{ page.title }}</span>
           <hr class="star-light">
-          <span class="skills">
+          <span class="skills left-text ">
 
             <p>{{ content }}</p>
             <p>Read <a class="alter" href="{{page.link}}"> more </a>.</p>
