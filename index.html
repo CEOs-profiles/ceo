@@ -19,11 +19,11 @@ title: CEOs
                     <a href="{{site.baseurl}}/{{post.url}}" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x">{{post.title}}</i>
+                                <i class="fa fa-search-plus fa-2x">{{post.title}}</i>
                             </div>
                         </div>
                         <div class="box">
-                        <img src="{{site.baseurl}}/images/{{post.image}}" alt="{{ page.ceo }}" class="img-responsive">
+                        <img src="{{site.baseurl}}/images/{% if post.image %}{{post.image}}{% else %}profile.png{% endif %}" alt="{{ page.ceo }}" class="img-responsive">
                       </div>
                     </a>
                 </div>
