@@ -90,6 +90,13 @@ header {
     background: #18bc9c;
 }
 
+.left-text {
+    text-align: left;
+}
+.left-text a{
+  color: #000000;
+}
+
 header .container {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -212,6 +219,9 @@ section.success a.active {
     }
 }
 
+.max-50 {
+  max-width: 50%;
+}
 
 #portfolio .portfolio-item {
     right: 0;
